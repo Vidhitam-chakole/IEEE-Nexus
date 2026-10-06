@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 .clay-btn-primary:hover {
   background: var(--accent-hover);
   transform: translateY(-2px);
-  box-shadow: 10px 10px 22px rgba(108, 71, 255, 0.35), -6px -6px 14px rgba(255, 255, 255, 0.9);
+  box-shadow: 10px 10px 22px rgba(153, 0, 0, 0.35), -6px -6px 14px rgba(255, 255, 255, 0.9);
 }
 
 .clay-btn-primary:active {
@@ -112,9 +112,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .clay-input:focus {
-  background: #E6E0FD;
+  background: #FFF5F2;
   box-shadow:
-    inset 7px 7px 14px rgba(108, 71, 255, 0.22),
+    inset 7px 7px 14px rgba(153, 0, 0, 0.12),
     inset -7px -7px 14px rgba(255, 255, 255, 0.95);
 }
 
@@ -163,10 +163,10 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--bg-app);
 }
 ::-webkit-scrollbar-thumb {
-  background: #D5CEF5;
+  background: #E8D0CE;
   border-radius: 9999px;
   border: 2px solid var(--bg-app);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #B9AEEC;
+  background: var(--accent-primary);
 }

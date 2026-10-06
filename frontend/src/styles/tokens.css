@@ -1,47 +1,71 @@
 :root {
-  /* Pastel Surfaces & Backgrounds */
-  --bg-app: #F1EEFF;
-  --bg-card: #F9F8FF;
-  --bg-inset: #ECE7FE;
+  /* =========================================================================
+     SIU (Symbiosis International University) Official Deep Red Scheme
+     ========================================================================= */
+  /* Primary Brand Identity: Symbiosis Signature Deep Red */
+  --siu-red-primary: #990000;
+  --siu-red-dark: #7A0000;
+  --siu-red-deep: #5E0000;
+  --siu-red-light: #FCECE9;
+  --siu-red-subtle: #FFF5F2;
+
+  /* Convocation & Crest Regal Gold */
+  --siu-gold: #D4AF37;
+  --siu-gold-hover: #C49A24;
+  --siu-gold-light: #FEF7DE;
+
+  /* Collegiate Warm Surfaces & Backgrounds */
+  --bg-app: #FAF6F4;              /* Soft warm collegiate ivory/cream surface */
+  --bg-card: #FFFFFF;              /* Crisp elevated clay surface */
+  --bg-card-subtle: #FFFDFB;       /* Warm subtle card surface */
+  --bg-inset: #F4EBE7;             /* Inset wells with gentle warm clay depth */
   --bg-surface-elevated: #FFFFFF;
 
-  /* Typography Colors (High contrast dark purple/navy on pastels) */
-  --text-primary: #1C153B;
-  --text-secondary: #574F75;
-  --text-muted: #8E86AD;
+  /* Typography Colors (High-Contrast Deep Crimson & Espresso) */
+  --text-primary: #2B0A0E;         /* Deepest rich crimson-tinted text */
+  --text-secondary: #68454B;       /* Warm collegiate slate */
+  --text-muted: #9B787E;           /* Soft muted tone */
   --text-inverted: #FFFFFF;
 
-  /* Pastel Clay Palette */
-  --clay-lavender: #E4DCFF;
-  --clay-peach: #FFE4D6;
-  --clay-mint: #D4F5E9;
-  --clay-pink: #FFDCE5;
-  --clay-baby-blue: #D7EEFF;
-  --clay-yellow: #FEF3C7;
+  /* SIU Deep Red Clay Palette Tokens */
+  --clay-hero: #990000;            /* SIU Deep Red */
+  --clay-gold: #D4AF37;            /* Regal Gold */
+  --clay-crimson: #7A0000;         /* Deep Crimson */
+  --clay-rose: #FCECE9;            /* Rose Ivory */
+  --clay-cream: #FAF6F4;           /* Warm Ivory */
+
+  /* Aliased Clay Pastels for UI Components */
+  --clay-lavender: #F2E4E4;
+  --clay-peach: #FCECE9;
+  --clay-mint: #D6ECE0;            /* Natural mineral sage green */
+  --clay-pink: #FBD5D0;            /* Warm crimson rose tint */
+  --clay-baby-blue: #E1ECF7;
+  --clay-yellow: #FEF7DE;
 
   /* Status Colors */
-  --status-approved-bg: #D4F5E9;
-  --status-approved-text: #0E6545;
-  --status-approved-shadow: rgba(14, 101, 69, 0.2);
+  --status-approved-bg: #DCEEE3;
+  --status-approved-text: #165B38;
+  --status-approved-shadow: rgba(22, 91, 56, 0.2);
 
-  --status-pending-bg: #FFE4D6;
-  --status-pending-text: #92400E;
-  --status-pending-shadow: rgba(146, 64, 14, 0.2);
+  --status-pending-bg: #FEF4DC;    /* Warm golden honey tint */
+  --status-pending-text: #8A5A14;
+  --status-pending-shadow: rgba(138, 90, 20, 0.2);
 
-  --status-missing-bg: #FFDCE5;
-  --status-missing-text: #9F1239;
-  --status-missing-shadow: rgba(159, 18, 57, 0.2);
+  --status-missing-bg: #FBE5E5;    /* SIU soft crimson tint */
+  --status-missing-text: #990000;
+  --status-missing-shadow: rgba(153, 0, 0, 0.2);
 
-  --status-active-bg: #D7EEFF;
-  --status-active-text: #075985;
-  --status-active-shadow: rgba(7, 89, 133, 0.2);
+  --status-active-bg: #FCECE9;     /* Rose well */
+  --status-active-text: #990000;   /* Deep red */
+  --status-active-shadow: rgba(153, 0, 0, 0.2);
 
-  /* Primary Accent & Interactivity */
-  --accent-primary: #6C47FF;
-  --accent-hover: #5833EE;
-  --accent-active: #4722DE;
-  --accent-light: #ECE7FE;
-  --accent-coral: #FF6B6B;
+  /* Primary Accent & Interactivity (SIU Deep Red Anchor) */
+  --accent-primary: #990000;       /* SIU Deep Red */
+  --accent-hover: #7A0000;         /* Deep Crimson */
+  --accent-active: #5E0000;        /* Dark Burgundy */
+  --accent-light: #FCECE9;         /* Rose Wash */
+  --accent-gold: #D4AF37;          /* Regal Gold Accent */
+  --accent-coral: #D9483B;
 
   /* Border Radii */
   --radius-card: 32px;
@@ -50,39 +74,39 @@
   --radius-pill: 9999px;
   --radius-input: 20px;
 
-  /* Puffy 3D Claymorphic Layered Shadows */
+  /* Puffy 3D Claymorphic Layered Shadows (Tinted with SIU Deep Red warmth) */
   --shadow-clay-card:
-    12px 12px 24px rgba(120, 100, 180, 0.25),
-    -8px -8px 20px rgba(255, 255, 255, 0.9),
+    12px 12px 24px rgba(153, 0, 0, 0.08),
+    -8px -8px 20px rgba(255, 255, 255, 0.95),
     inset 6px 6px 12px rgba(255, 255, 255, 0.8),
-    inset -6px -6px 12px rgba(120, 100, 180, 0.18);
+    inset -6px -6px 12px rgba(153, 0, 0, 0.04);
 
   --shadow-clay-card-hover:
-    16px 16px 32px rgba(120, 100, 180, 0.28),
-    -10px -10px 26px rgba(255, 255, 255, 0.95),
+    16px 16px 32px rgba(153, 0, 0, 0.12),
+    -10px -10px 26px rgba(255, 255, 255, 0.98),
     inset 6px 6px 12px rgba(255, 255, 255, 0.85),
-    inset -6px -6px 12px rgba(120, 100, 180, 0.15);
+    inset -6px -6px 12px rgba(153, 0, 0, 0.03);
 
   --shadow-clay-button:
-    8px 8px 18px rgba(108, 71, 255, 0.28),
+    8px 8px 18px rgba(153, 0, 0, 0.26),
     -6px -6px 14px rgba(255, 255, 255, 0.9),
-    inset 3px 3px 6px rgba(255, 255, 255, 0.6),
-    inset -3px -3px 6px rgba(0, 0, 0, 0.15);
+    inset 3px 3px 6px rgba(255, 255, 255, 0.35),
+    inset -3px -3px 6px rgba(0, 0, 0, 0.22);
 
   --shadow-clay-button-pressed:
-    inset 6px 6px 12px rgba(71, 34, 222, 0.45),
-    inset -4px -4px 10px rgba(255, 255, 255, 0.5);
+    inset 6px 6px 12px rgba(94, 0, 0, 0.5),
+    inset -4px -4px 10px rgba(255, 255, 255, 0.3);
 
   --shadow-clay-input:
-    inset 6px 6px 12px rgba(120, 100, 180, 0.18),
+    inset 6px 6px 12px rgba(153, 0, 0, 0.06),
     inset -6px -6px 12px rgba(255, 255, 255, 0.9),
     2px 2px 6px rgba(255, 255, 255, 0.6);
 
   --shadow-clay-pill:
-    4px 4px 10px rgba(120, 100, 180, 0.15),
+    4px 4px 10px rgba(153, 0, 0, 0.07),
     -3px -3px 8px rgba(255, 255, 255, 0.8),
     inset 2px 2px 4px rgba(255, 255, 255, 0.7),
-    inset -2px -2px 4px rgba(120, 100, 180, 0.1);
+    inset -2px -2px 4px rgba(153, 0, 0, 0.04);
 
   /* Fonts */
   --font-body: 'Nunito', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
