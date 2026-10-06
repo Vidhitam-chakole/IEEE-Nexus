@@ -1,0 +1,172 @@
+@import './tokens.css';
+
+/* Global Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Claymorphic Buttons */
+.clay-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: var(--radius-button);
+  border: none;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.18s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.18s ease;
+  user-select: none;
+  text-decoration: none;
+}
+
+.clay-btn-primary {
+  background: var(--accent-primary);
+  color: var(--text-inverted);
+  box-shadow: var(--shadow-clay-button);
+}
+
+.clay-btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 10px 10px 22px rgba(108, 71, 255, 0.35), -6px -6px 14px rgba(255, 255, 255, 0.9);
+}
+
+.clay-btn-primary:active {
+  transform: scale(0.96);
+  box-shadow: var(--shadow-clay-button-pressed);
+}
+
+.clay-btn-secondary {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-clay-card);
+}
+
+.clay-btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-clay-card-hover);
+}
+
+.clay-btn-secondary:active {
+  transform: scale(0.96);
+  box-shadow: var(--shadow-clay-input);
+}
+
+/* Clay Cards */
+.clay-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-clay-card);
+  border: none;
+  padding: 28px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clay-card-sm {
+  border-radius: var(--radius-card-sm);
+  padding: 20px;
+}
+
+.clay-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-clay-card-hover);
+}
+
+/* Clay Inputs */
+.clay-input {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: var(--radius-input);
+  background: var(--bg-inset);
+  box-shadow: var(--shadow-clay-input);
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  outline: none;
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.clay-input:focus {
+  background: #E6E0FD;
+  box-shadow:
+    inset 7px 7px 14px rgba(108, 71, 255, 0.22),
+    inset -7px -7px 14px rgba(255, 255, 255, 0.95);
+}
+
+.clay-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Status Chips / Pills */
+.clay-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-clay-pill);
+  letter-spacing: 0.02em;
+}
+
+.clay-pill-approved {
+  background: var(--status-approved-bg);
+  color: var(--status-approved-text);
+}
+
+.clay-pill-pending {
+  background: var(--status-pending-bg);
+  color: var(--status-pending-text);
+}
+
+.clay-pill-missing {
+  background: var(--status-missing-bg);
+  color: var(--status-missing-text);
+}
+
+.clay-pill-active {
+  background: var(--status-active-bg);
+  color: var(--status-active-text);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-app);
+}
+::-webkit-scrollbar-thumb {
+  background: #D5CEF5;
+  border-radius: 9999px;
+  border: 2px solid var(--bg-app);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B9AEEC;
+}

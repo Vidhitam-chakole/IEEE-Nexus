@@ -1,0 +1,91 @@
+:root {
+  /* Pastel Surfaces & Backgrounds */
+  --bg-app: #F1EEFF;
+  --bg-card: #F9F8FF;
+  --bg-inset: #ECE7FE;
+  --bg-surface-elevated: #FFFFFF;
+
+  /* Typography Colors (High contrast dark purple/navy on pastels) */
+  --text-primary: #1C153B;
+  --text-secondary: #574F75;
+  --text-muted: #8E86AD;
+  --text-inverted: #FFFFFF;
+
+  /* Pastel Clay Palette */
+  --clay-lavender: #E4DCFF;
+  --clay-peach: #FFE4D6;
+  --clay-mint: #D4F5E9;
+  --clay-pink: #FFDCE5;
+  --clay-baby-blue: #D7EEFF;
+  --clay-yellow: #FEF3C7;
+
+  /* Status Colors */
+  --status-approved-bg: #D4F5E9;
+  --status-approved-text: #0E6545;
+  --status-approved-shadow: rgba(14, 101, 69, 0.2);
+
+  --status-pending-bg: #FFE4D6;
+  --status-pending-text: #92400E;
+  --status-pending-shadow: rgba(146, 64, 14, 0.2);
+
+  --status-missing-bg: #FFDCE5;
+  --status-missing-text: #9F1239;
+  --status-missing-shadow: rgba(159, 18, 57, 0.2);
+
+  --status-active-bg: #D7EEFF;
+  --status-active-text: #075985;
+  --status-active-shadow: rgba(7, 89, 133, 0.2);
+
+  /* Primary Accent & Interactivity */
+  --accent-primary: #6C47FF;
+  --accent-hover: #5833EE;
+  --accent-active: #4722DE;
+  --accent-light: #ECE7FE;
+  --accent-coral: #FF6B6B;
+
+  /* Border Radii */
+  --radius-card: 32px;
+  --radius-card-sm: 24px;
+  --radius-button: 9999px;
+  --radius-pill: 9999px;
+  --radius-input: 20px;
+
+  /* Puffy 3D Claymorphic Layered Shadows */
+  --shadow-clay-card:
+    12px 12px 24px rgba(120, 100, 180, 0.25),
+    -8px -8px 20px rgba(255, 255, 255, 0.9),
+    inset 6px 6px 12px rgba(255, 255, 255, 0.8),
+    inset -6px -6px 12px rgba(120, 100, 180, 0.18);
+
+  --shadow-clay-card-hover:
+    16px 16px 32px rgba(120, 100, 180, 0.28),
+    -10px -10px 26px rgba(255, 255, 255, 0.95),
+    inset 6px 6px 12px rgba(255, 255, 255, 0.85),
+    inset -6px -6px 12px rgba(120, 100, 180, 0.15);
+
+  --shadow-clay-button:
+    8px 8px 18px rgba(108, 71, 255, 0.28),
+    -6px -6px 14px rgba(255, 255, 255, 0.9),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.6),
+    inset -3px -3px 6px rgba(0, 0, 0, 0.15);
+
+  --shadow-clay-button-pressed:
+    inset 6px 6px 12px rgba(71, 34, 222, 0.45),
+    inset -4px -4px 10px rgba(255, 255, 255, 0.5);
+
+  --shadow-clay-input:
+    inset 6px 6px 12px rgba(120, 100, 180, 0.18),
+    inset -6px -6px 12px rgba(255, 255, 255, 0.9),
+    2px 2px 6px rgba(255, 255, 255, 0.6);
+
+  --shadow-clay-pill:
+    4px 4px 10px rgba(120, 100, 180, 0.15),
+    -3px -3px 8px rgba(255, 255, 255, 0.8),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(120, 100, 180, 0.1);
+
+  /* Fonts */
+  --font-body: 'Nunito', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Poppins', 'Nunito', sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+}
