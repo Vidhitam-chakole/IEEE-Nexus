@@ -3,12 +3,37 @@ import { authApi } from '../api/endpoints';
 
 const AuthContext = createContext(null);
 
-export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(() => {
+const getInitialUser = () => {
+  try {
     const saved = localStorage.getItem('user');
-    return saved ? JSON.parse(saved) : null;
-  });
-  const [token, setToken] = useState(() => localStorage.getItem('token') || null);
+    if (!saved || saved === 'undefined' || saved === 'null') {
+      return null;
+    }
+    return JSON.parse(saved);
+  } catch (err) {
+    console.warn('Invalid user stored in localStorage, cleaning up:', err);
+    try {
+      localStorage.removeItem('user');
+    } catch (_) {}
+    return null;
+  }
+};
+
+const getInitialToken = () => {
+  try {
+    const token = localStorage.getItem('token');
+    if (!token || token === 'undefined' || token === 'null') {
+      return null;
+    }
+    return token;
+  } catch (_) {
+    return null;
+  }
+};
+
+export const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState(getInitialUser);
+  const [token, setToken] = useState(getInitialToken);
   const [team, setTeam] = useState(null);
   const [guideProfile, setGuideProfile] = useState(null);
   const [loading, setLoading] = useState(true);
