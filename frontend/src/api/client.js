@@ -14,10 +14,12 @@ const api = axios.create({
 
 // Attach JWT token if present in localStorage
 api.interceptors.request.use((config) => {
-  const token = localStorage.getItem('token');
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
-  }
+  try {
+    const token = localStorage.getItem('token');
+    if (token && token !== 'undefined' && token !== 'null') {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+  } catch (_) {}
   return config;
 }, (error) => {
   return Promise.reject(error);
