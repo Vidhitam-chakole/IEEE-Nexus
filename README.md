@@ -2,6 +2,11 @@
 
 > A modern, collegiate Capstone Project & Internship Management ERP replacing fragmented WhatsApp groups and manual spreadsheets with deterministic guide allocation, conflict-free review scheduling, continuous weekly progress logbooks, and live 12-week coordinator heatmaps.
 
+### 🌐 Live Production Deployments
+- **Primary Vercel URL**: [https://capstonetrack-app.vercel.app](https://capstonetrack-app.vercel.app)
+- **Alternate Vercel Mirror**: [https://capstonetrack-hub.vercel.app](https://capstonetrack-hub.vercel.app)
+- **GitHub Repository**: [https://github.com/Vidhitam-chakole/IEEE-Nexus](https://github.com/Vidhitam-chakole/IEEE-Nexus)
+
 ---
 
 ## 1. Features Overview
