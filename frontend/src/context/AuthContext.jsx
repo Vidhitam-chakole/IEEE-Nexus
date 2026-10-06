@@ -38,6 +38,17 @@ export const AuthProvider = ({ children }) => {
   const [guideProfile, setGuideProfile] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  const logout = () => {
+    try {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+    } catch (_) {}
+    setToken(null);
+    setUser(null);
+    setTeam(null);
+    setGuideProfile(null);
+  };
+
   const fetchProfile = async () => {
     const currentToken = getInitialToken();
     if (!currentToken) {
@@ -68,22 +79,16 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     const res = await authApi.login(email, password);
-    const { access_token, user: userData } = res.data;
-    localStorage.setItem('token', access_token);
-    localStorage.setItem('user', JSON.stringify(userData));
-    setToken(access_token);
-    setUser(userData);
-    await fetchProfile();
-    return userData;
-  };
-
-  const logout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    setToken(null);
-    setUser(null);
-    setTeam(null);
-    setGuideProfile(null);
+    const { access_token, user: userData } = res.data || {};
+    if (access_token && userData) {
+      localStorage.setItem('token', access_token);
+      localStorage.setItem('user', JSON.stringify(userData));
+      setToken(access_token);
+      setUser(userData);
+      await fetchProfile();
+      return userData;
+    }
+    throw new Error('Invalid login response from server');
   };
 
   const isStudent = user?.role === 'student';
