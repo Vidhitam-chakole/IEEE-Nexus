@@ -12,12 +12,12 @@ export default function LoginPage() {
   const navigate = useNavigate();
 
   const demoAccounts = [
-    { role: 'Coordinator', label: 'Dr. Rajesh Verma (Head)', email: 'coordinator@college.edu', pass: 'Coord@123', icon: '👑', color: '#8F75FF' },
-    { role: 'Guide', label: 'Dr. Arun Sharma (AI/ML)', email: 'arun.sharma@college.edu', pass: 'Guide@123', icon: '🧑‍🏫', color: '#6C47FF' },
-    { role: 'Student (Allocated)', label: 'Aarav Joshi (Team 1 Lead)', email: 'aarav.1@college.edu', pass: 'Student@123', icon: '🎒', color: '#0E6545' },
-    { role: 'Student (Unallocated)', label: 'Tanvi Shukla (Team 4 Lead)', email: 'tanvi.10@college.edu', pass: 'Student@123', icon: '⚡', color: '#D97706' },
-    { role: 'Solo Student', label: 'Rohan Singh (Ungrouped)', email: 'rohan.37@college.edu', pass: 'Student@123', icon: '👤', color: '#2563EB' },
-    { role: 'Panel Reviewer', label: 'Dr. Meera Oberoi (Panel)', email: 'panel.oberoi@college.edu', pass: 'Panel@123', icon: '⚖️', color: '#9333EA' },
+    { role: 'Coordinator', label: 'Dr. Rajesh Verma ', email: 'coordinator@college.edu', pass: 'Coord@123', icon: '', color: '#8F75FF' },
+    { role: 'Guide', label: 'Dr. Arun Sharma (AI/ML)', email: 'arun.sharma@college.edu', pass: 'Guide@123', icon: '', color: '#6C47FF' },
+    { role: 'Student ', label: 'Aarav Joshi (Team 1 Lead)', email: 'aarav.chakole@college.edu', pass: 'Student@123', icon: '', color: '#0E6545' },
+    { role: 'Student ', label: 'Tanvi Shukla (Team 4 Lead)', email: 'tanvi.shukla@college.edu', pass: 'Student@123', icon: '', color: '#D97706' },
+    { role: 'Solo Student', label: 'Rohan Singh', email: 'rohan.singh@college.edu', pass: 'Student@123', icon: '', color: '#2563EB' },
+    { role: 'Panel Reviewer', label: 'Dr. Meera Oberoi', email: 'panel.oberoi@college.edu', pass: 'Panel@123', icon: '', color: '#9333EA' },
   ];
 
   const handleQuickFill = (acc) => {
@@ -102,7 +102,7 @@ export default function LoginPage() {
               <input
                 type="email"
                 className="clay-input"
-                placeholder="e.g. coordinator@college.edu"
+                placeholder="e.g. YourEmailAddress@college.edu"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -146,10 +146,10 @@ export default function LoginPage() {
         <div className="clay-card" style={{ padding: '36px', background: 'rgba(255, 255, 255, 0.85)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
             <Sparkles size={20} color="var(--accent-primary)" />
-            <h2 style={{ fontSize: '1.25rem', fontWeight: 800 }}>1-Click Demo Profiles</h2>
+            <h2 style={{ fontSize: '1.25rem', fontWeight: 800 }}>Profiles</h2>
           </div>
           <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginBottom: 20 }}>
-            Click any collegiate role to instantly populate credentials and test the live application flows:
+            Test the live application flows:
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>

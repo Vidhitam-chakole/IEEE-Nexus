@@ -107,7 +107,7 @@ export default function LandingPage() {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-secondary)' }}>
-            Collegiate Capstone ERP
+
           </div>
           <Link to="/login" className="clay-btn clay-btn-primary" style={{ padding: '8px 22px', fontSize: '0.88rem' }}>
             Open Portal <ArrowRight size={16} />
@@ -186,8 +186,8 @@ export default function LandingPage() {
               fontWeight: 700,
             }}
           >
-            <span>Scroll Down</span>
-            <ArrowDown size={16} className="animate-bounce" style={{ color: 'var(--accent-primary)' }} />
+
+
           </div>
         </div>
       </section>
@@ -218,7 +218,7 @@ export default function LandingPage() {
             className="clay-pill clay-pill-missing"
             style={{ marginBottom: 18 }}
           >
-            THE CURRENT CHAOS
+            The current problem
           </div>
           <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', lineHeight: 1.25, marginBottom: 20 }}>
             {renderWordByWord('Scattered guides, missed reviews, last-minute logbooks.', 0.16, 0.32)}
@@ -256,7 +256,7 @@ export default function LandingPage() {
             className="clay-pill clay-pill-approved"
             style={{ marginBottom: 18 }}
           >
-            THE CAPSTONETRACK REMEDY
+            The solution we made
           </div>
           <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', lineHeight: 1.25, marginBottom: 20 }}>
             {renderWordByWord('One place for every team, guide and review.', 0.33, 0.48)}
@@ -285,7 +285,7 @@ export default function LandingPage() {
       >
         <div style={{ textAlign: 'center', marginBottom: 36 }}>
           <div className="clay-pill clay-pill-active" style={{ marginBottom: 12 }}>
-            INTERACTIVE LIFECYCLE
+
           </div>
           <h2 style={{ fontSize: '2.5rem', fontWeight: 800 }}>Seamless 5-Step Progression</h2>
         </div>
@@ -495,7 +495,7 @@ export default function LandingPage() {
         >
           {/* Student */}
           <div className="clay-card clay-card-sm" style={{ background: 'rgba(255, 255, 255, 0.92)' }}>
-            <div style={{ fontSize: '2rem', marginBottom: 8 }}>🎒</div>
+            <div style={{ fontSize: '2rem', marginBottom: 8 }}></div>
             <h3 style={{ fontSize: '1.25rem', marginBottom: 6 }}>Student</h3>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
               Create teams via 6-char codes, rank 3 guide preferences, submit weekly logs, and upload reports.
@@ -504,7 +504,7 @@ export default function LandingPage() {
 
           {/* Guide */}
           <div className="clay-card clay-card-sm" style={{ background: 'rgba(255, 255, 255, 0.92)' }}>
-            <div style={{ fontSize: '2rem', marginBottom: 8 }}>🧑‍🏫</div>
+            <div style={{ fontSize: '2rem', marginBottom: 8 }}></div>
             <h3 style={{ fontSize: '1.25rem', marginBottom: 6 }}>Guide</h3>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
               Supervise multiple teams up to capacity, sign off on weekly logs, and approve internship letters.
@@ -513,7 +513,7 @@ export default function LandingPage() {
 
           {/* Coordinator */}
           <div className="clay-card clay-card-sm" style={{ background: 'rgba(255, 255, 255, 0.92)' }}>
-            <div style={{ fontSize: '2rem', marginBottom: 8 }}>👑</div>
+            <div style={{ fontSize: '2rem', marginBottom: 8 }}></div>
             <h3 style={{ fontSize: '1.25rem', marginBottom: 6 }}>Coordinator</h3>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
               Run preference allocation, adjust quotas, schedule review slots, and monitor the 12-week heatmap.
@@ -522,7 +522,7 @@ export default function LandingPage() {
 
           {/* Panel */}
           <div className="clay-card clay-card-sm" style={{ background: 'rgba(255, 255, 255, 0.92)' }}>
-            <div style={{ fontSize: '2rem', marginBottom: 8 }}>⚖️</div>
+            <div style={{ fontSize: '2rem', marginBottom: 8 }}></div>
             <h3 style={{ fontSize: '1.25rem', marginBottom: 6 }}>Review Panel</h3>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
               View scheduled evaluation slots and inspect team synopsis and SRS documents without clashes.
@@ -555,15 +555,13 @@ export default function LandingPage() {
             background: 'rgba(255, 255, 255, 0.94)',
           }}
         >
-          <div className="clay-pill clay-pill-active" style={{ marginBottom: 16 }}>
-            READY TO TRANSFORM YOUR CAPSTONE PROGRAM?
-          </div>
+
+
           <h2 style={{ fontSize: '2.8rem', fontWeight: 900, marginBottom: 16 }}>
             Experience CapstoneTrack Today
           </h2>
           <p style={{ fontSize: '1.15rem', color: 'var(--text-secondary)', marginBottom: 32, lineHeight: 1.6 }}>
-            Preloaded with realistic collegiate seed data: 1 Coordinator, 10 Guides across AI/Cloud/Security,
-            12 Teams, and live allocation demos.
+            Preloaded with realistic collegiate seed data
           </p>
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap' }}>
@@ -572,9 +570,7 @@ export default function LandingPage() {
             </Link>
           </div>
 
-          <div style={{ marginTop: 28, fontSize: '0.88rem', color: 'var(--text-muted)' }}>
-            Demo credentials provided for all 4 roles on login screen.
-          </div>
+
         </div>
       </section>
     </div>
