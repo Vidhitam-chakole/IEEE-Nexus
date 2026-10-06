@@ -39,16 +39,21 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   const fetchProfile = async () => {
-    if (!localStorage.getItem('token')) {
+    const currentToken = getInitialToken();
+    if (!currentToken) {
       setLoading(false);
       return;
     }
     try {
       const res = await authApi.getMe();
-      setUser(res.data.user);
-      setTeam(res.data.team);
-      setGuideProfile(res.data.guide_profile);
-      localStorage.setItem('user', JSON.stringify(res.data.user));
+      if (res?.data?.user) {
+        setUser(res.data.user);
+        setTeam(res.data.team || null);
+        setGuideProfile(res.data.guide_profile || null);
+        localStorage.setItem('user', JSON.stringify(res.data.user));
+      } else {
+        logout();
+      }
     } catch (err) {
       console.error('Failed to load profile', err);
       logout();
