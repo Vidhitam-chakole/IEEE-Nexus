@@ -14,7 +14,7 @@ export default function HeroObject({ scrollProgress }) {
   const targetPos = useRef(new THREE.Vector3(0, 0, 0));
   const targetRot = useRef(new THREE.Euler(0, 0, 0));
   const targetScale = useRef(new THREE.Vector3(1, 1, 1));
-  const targetColor = useRef(new THREE.Color('#8F75FF'));
+  const targetColor = useRef(new THREE.Color('#990000'));
 
   useFrame((state, delta) => {
     const time = state.clock.getElapsedTime();
@@ -90,57 +90,57 @@ export default function HeroObject({ scrollProgress }) {
           />
         </mesh>
 
-        {/* Cap Button on Top */}
+        {/* Cap Button on Top in Regal Symbiosis Gold */}
         <mesh position={[0, 0.48, 0]}>
           <sphereGeometry args={[0.14, 24, 24]} />
           <meshStandardMaterial
-            color="#FFE4D6"
-            roughness={0.75}
-            metalness={0.08}
+            color="#D4AF37"
+            roughness={0.65}
+            metalness={0.25}
           />
         </mesh>
 
-        {/* Tassel Cord & Dangling Fringe */}
+        {/* Tassel Cord & Dangling Fringe (Regal Symbiosis Gold #D4AF37) */}
         <group ref={tasselRef} position={[0, 0.46, 0]}>
           {/* Cord Ribbon */}
           <mesh position={[0.7, -0.15, 0.7]} rotation={[0.4, 0, -0.6]}>
             <cylinderGeometry args={[0.035, 0.035, 1.2, 12]} />
-            <meshStandardMaterial color="#FFE4D6" roughness={0.75} />
+            <meshStandardMaterial color="#D4AF37" roughness={0.65} metalness={0.2} />
           </mesh>
           {/* Tassel End Puff */}
           <mesh position={[1.25, -0.65, 1.25]}>
             <sphereGeometry args={[0.13, 16, 16]} />
-            <meshStandardMaterial color="#FFE4D6" roughness={0.8} />
+            <meshStandardMaterial color="#D4AF37" roughness={0.7} metalness={0.2} />
           </mesh>
           <mesh position={[1.25, -0.85, 1.25]}>
             <cylinderGeometry args={[0.1, 0.15, 0.35, 16]} />
-            <meshStandardMaterial color="#FFE4D6" roughness={0.85} />
+            <meshStandardMaterial color="#D4AF37" roughness={0.75} metalness={0.2} />
           </mesh>
         </group>
       </group>
 
-      {/* 4 ORBITING CLAY BLOBS (Section 6: Student, Guide, Coordinator, Panel) */}
+      {/* 4 ORBITING CLAY BLOBS (SIU Red & Gold Stakeholder Blobs) */}
       {splitAmount > 0.05 && (
         <group ref={orbitGroupRef} position={[0, 0.2, 0]}>
-          {/* Student Blob (Pastel Mint) */}
+          {/* Student Blob (SIU Deep Red) */}
           <mesh position={[Math.cos(0) * (1.8 * splitAmount), 0, Math.sin(0) * (1.8 * splitAmount)]}>
             <sphereGeometry args={[0.38, 24, 24]} />
-            <meshStandardMaterial color="#A8EDDC" roughness={0.82} />
+            <meshStandardMaterial color="#990000" roughness={0.82} />
           </mesh>
-          {/* Guide Blob (Pastel Peach) */}
+          {/* Guide Blob (Symbiosis Regal Gold) */}
           <mesh position={[Math.cos(Math.PI * 0.5) * (1.8 * splitAmount), 0, Math.sin(Math.PI * 0.5) * (1.8 * splitAmount)]}>
             <sphereGeometry args={[0.42, 24, 24]} />
-            <meshStandardMaterial color="#FED7AA" roughness={0.82} />
+            <meshStandardMaterial color="#D4AF37" roughness={0.75} metalness={0.15} />
           </mesh>
-          {/* Coordinator Blob (Vibrant Violet) */}
+          {/* Coordinator Blob (Deep Crimson Maroon) */}
           <mesh position={[Math.cos(Math.PI) * (1.8 * splitAmount), 0, Math.sin(Math.PI) * (1.8 * splitAmount)]}>
             <sphereGeometry args={[0.46, 24, 24]} />
-            <meshStandardMaterial color="#8F75FF" roughness={0.82} />
+            <meshStandardMaterial color="#7A0000" roughness={0.82} />
           </mesh>
-          {/* Panel Blob (Pastel Blue) */}
+          {/* Panel Blob (Warm Terracotta Rose) */}
           <mesh position={[Math.cos(Math.PI * 1.5) * (1.8 * splitAmount), 0, Math.sin(Math.PI * 1.5) * (1.8 * splitAmount)]}>
             <sphereGeometry args={[0.36, 24, 24]} />
-            <meshStandardMaterial color="#BAE6FD" roughness={0.82} />
+            <meshStandardMaterial color="#C2410C" roughness={0.82} />
           </mesh>
         </group>
       )}

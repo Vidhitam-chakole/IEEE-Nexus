@@ -48,7 +48,7 @@ export default function HeroCanvas({ scrollProgress }) {
             width: 220,
             height: 220,
             borderRadius: '50%',
-            background: 'linear-gradient(135deg, #A792FF 0%, #6C47FF 100%)',
+            background: 'linear-gradient(135deg, #B30000 0%, #7A0000 100%)',
             boxShadow: 'var(--shadow-clay-card)',
             display: 'flex',
             alignItems: 'center',
@@ -81,13 +81,13 @@ export default function HeroCanvas({ scrollProgress }) {
         gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
       >
         {/* Soft Ambient Light for Matte Clay */}
-        <ambientLight intensity={1.1} />
+        <ambientLight intensity={1.15} />
 
-        {/* Warm Key Directional Light */}
-        <directionalLight position={[5, 8, 5]} intensity={1.4} color="#FFF8F0" />
+        {/* Warm Golden Key Directional Light */}
+        <directionalLight position={[5, 8, 5]} intensity={1.35} color="#FFF8F0" />
 
-        {/* Soft Violet/Lavender Fill Light */}
-        <directionalLight position={[-5, -2, -2]} intensity={0.5} color="#D6CEFE" />
+        {/* Gentle Rose/Ivory Fill Light */}
+        <directionalLight position={[-5, -2, -2]} intensity={0.5} color="#FCECE9" />
 
         {/* Persistent 3D Clay Hero Object */}
         <HeroObject scrollProgress={scrollProgress} />

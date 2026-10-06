@@ -4,13 +4,13 @@
  */
 
 export const KEYFRAMES = [
-  // 1. Hero (0.00 - 0.15)
+  // 1. Hero (0.00 - 0.15): SIU Signature Deep Red
   {
     progress: 0.0,
     position: [0, 0.1, 0],
     rotation: [0.25, -0.2, 0],
     scale: [1, 1, 1],
-    color: '#8F75FF', // Soft lavender/violet
+    color: '#990000', // SIU Deep Red
     split: 0.0,
     activeSection: 0,
   },
@@ -19,67 +19,67 @@ export const KEYFRAMES = [
     position: [0, 0.15, 0],
     rotation: [0.3, 0.15, 0],
     scale: [1, 1, 1],
-    color: '#8F75FF',
+    color: '#990000',
     split: 0.0,
     activeSection: 0,
   },
-  // 2. Problem (0.16 - 0.32): Drifts left, squashes, stressed coral
+  // 2. Problem (0.16 - 0.32): Drifts left, squashes, stressed warm coral/terracotta
   {
     progress: 0.25,
     position: [-1.9, -0.1, 0],
     rotation: [0.4, -0.6, -0.25],
     scale: [0.85, 0.72, 0.85], // squashed
-    color: '#FFAAA6', // Stressed coral
+    color: '#C2410C', // Stressed terracotta
     split: 0.0,
     activeSection: 1,
   },
-  // 3. Solution (0.33 - 0.48): Returns center, rotates, soothing mint
+  // 3. Solution (0.33 - 0.48): Returns center, rotates, calming emerald/mint
   {
     progress: 0.40,
     position: [0, 0.2, 0],
-    rotation: [0.2, Math.PI * 1.1, 0], // rotated yaw to show side
+    rotation: [0.2, Math.PI * 1.1, 0], // rotated yaw
     scale: [1.05, 1.05, 1.05],
-    color: '#A8EDDC', // Calming pastel mint
+    color: '#0D9488', // Calming teal/mint
     split: 0.0,
     activeSection: 2,
   },
-  // 4. How It Works (0.49 - 0.65): Rotates step per label with squash-stretch bounce
+  // 4. How It Works (0.49 - 0.65): Rotates step per label, SIU Deep Red
   {
     progress: 0.57,
     position: [0, 0.05, 0],
     rotation: [0.35, Math.PI * 1.8, 0.1],
     scale: [1.0, 1.08, 1.0],
-    color: '#BAE6FD', // Pastel baby blue
+    color: '#990000', // SIU Deep Red
     split: 0.0,
     activeSection: 3,
   },
-  // 5. Stats Strip (0.66 - 0.78): Floats above center, pastel peach
+  // 5. Stats Strip (0.66 - 0.78): Floats above center, Symbiosis Regal Gold
   {
     progress: 0.72,
     position: [0, 0.75, -0.4],
     rotation: [0.15, Math.PI * 2.2, 0],
     scale: [0.92, 0.92, 0.92],
-    color: '#FED7AA', // Pastel peach
+    color: '#D4AF37', // Symbiosis Regal Gold
     split: 0.0,
     activeSection: 4,
   },
-  // 6. Roles Orbit (0.79 - 0.90): Splits into 4 orbiting clay blobs and merges
+  // 6. Roles Orbit (0.79 - 0.90): Splits into 4 orbiting clay blobs
   {
     progress: 0.84,
     position: [0, 0.1, 0],
     rotation: [0.2, Math.PI * 2.8, 0],
     scale: [0.85, 0.85, 0.85],
-    color: '#E4DCFF',
+    color: '#7A0000', // Deep Crimson
     split: 1.0, // Full orbit split
     activeSection: 5,
   },
-  // 7. Final CTA (0.91 - 1.00): Scales up with happy bounce in accent violet
+  // 7. Final CTA (0.91 - 1.00): Scales up with bounce in SIU Deep Red
   {
     progress: 1.0,
     position: [0, 0.25, 0.2],
     rotation: [0.2, Math.PI * 3.0, 0],
     scale: [1.22, 1.22, 1.22],
-    color: '#6C47FF', // Vibrant brand accent
+    color: '#990000', // SIU Deep Red
     split: 0.0,
     activeSection: 6,
   },
