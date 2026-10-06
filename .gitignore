@@ -1,0 +1,30 @@
+# Python & Virtualenv
+backend/venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.db
+capstonetrack.db
+.pytest_cache/
+
+# Local Environment & Secrets
+.env
+.env.local
+
+# File Uploads
+uploads/*
+!uploads/.gitkeep
+
+# Node & Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+node_modules/
+dist/
+
+# OS and Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
